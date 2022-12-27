@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Triangles World</title>
+</head>
+<body>
+    <header>
+        <h1>Fun With Triangles</h1>
+        <ul>
+            <li>Is Triangle?</li>
+            <li>Triangle Quiz</li>
+            <li>Calculate Hypotenuse</li>
+            <li>Calculate Area</li>
+        </ul>
+    </header>
+
+    <section id="isTriangle">
+        <h2>Anlges of Triangles</h2>
+        <div>Angle 1</div>
+        <input type="number"/>
+        <div>Angle 2</div>
+        <input type="number"/>
+        <div>Angle 3</div>
+        <input type="number"/>
+        <button>Is Triangle?</button>
+        <span></span>
+    </section>
+
+    <section style="height: auto;" id="quiz">
+        <h2>Quiz on triangles</h2>
+        <h4>For each correct answer you will get 1 point</h4>
+        <ol>
+            <form>
+                <li class="question-container">
+                    <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                    <label><input type="radio" name="question1" value="45°" />45°</label>
+                    <label><input type="radio" name="question1" value="60°" />60°</label>
+                    <label><input type="radio" name="question1" value="90°" />90°</label>
+                </li>
+                <li class="question-container">
+                    <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+                    <label><input type="radio" name="question2" value="obtuse"/>obtuse</label>
+                    <label><input type="radio" name="question2" value="acute"/>acute</label>
+                    <label><input type="radio" name="question2" value="right angled"/>right angled</label>
+                </li>  
+                <li class="question-container">
+                    <p>If a triangle has all 3 sides equal, what is it called?</p>
+                    <label><input type="radio" name="question3" value="equilateral"/>equilateral</label>
+                    <label><input type="radio" name="question3" value="isosceles"/>isosceles</label>
+                    <label><input type="radio" name="question3" value="scalene"/>scalene</label>
+                </li>
+                <li class="question-container">
+                    <p>If a triangle has all 3 sides of different length, what is it called?</p>
+                    <label><input type="radio" name="question4" value="equilateral"/>equilateral</label>
+                    <label><input type="radio" name="question4" value="isosceles"/>isosceles</label>
+                    <label><input type="radio" name="question4" value="scalene"/>scalene</label>
+                </li>
+                <li class="question-container">
+                    <p>If a triangle has 2 sides equal, what is it called?</p>
+                    <label><input type="radio" name="question5" value="equilateral"/>equilateral</label>
+                    <label><input type="radio" name="question5" value="isosceles"/>isosceles</label>
+                    <label><input type="radio" name="question5" value="scalene"/>scalene</label>
+                </li>
+            </form>
+        </ol>
+        <button>Submit Answers</button>
+        <span></span>
+    </section>
+    
+    <section id="hypotenuse">
+        <h2>Calculate Hypotenuse of a triangle</h2>
+        <div>Enter base value (a) =</div>
+        <input type="number"/>
+        <div>Enter height value (b) =</div>
+        <input type="number"/>
+        <button>Calculate hypotenuse</button>
+        <h2>Hypotenuse formula is: √(base² + height²)</h2>
+        <span></span>
+    </section>
+
+    <section id="area">
+        <h2>Calculate Area of a triangle</h2>
+        <div>Enter first side of a triangle</div>
+        <input type="number"/>
+        <div>Enter second side of a triangle</div>
+        <input type="number"/>
+        <div>Enter third side of a triangle</div>
+        <input type="number"/>
+        <button>Calculate</button>
+        <span></span>
+    </section>
+
+    <footer>
+        <h5>© | 2022 | adarshraghuwanshi</h5>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/adarsh-raghuwanshi/" target="_blank"><img class="logo" src="images/linked.png"/></a></li>
+            <li><a href="https://twitter.com/Adarshraghu184" target="_blank"><img src="images/twitter.png"/></a></li>
+            <li><a href="https://github.com/Adarsh-Raghuwanshi" target="_blank"><img class="logo" style="margin-left: 7%;" src="images/github.png"/></a></li>
+            <li><a href="https://www.facebook.com/adarsh.raghuwanshi.184" target="_blank"><img src="images/fb.png"/></a></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
