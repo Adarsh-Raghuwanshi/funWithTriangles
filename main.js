@@ -23,8 +23,8 @@ function checkTrianglePossibility(){
         if(isNaN(val)){
             sections[0].lastElementChild.innerHTML = "Please enter all 3 values!";
             return;
-        }else if(val == 0){
-            sections[0].lastElementChild.innerHTML = "A triangle can'nt have 0° angle!";
+        }else if(val <= 0){
+            sections[0].lastElementChild.innerHTML = "A triangle can'nt have a angle with negative or 0° value!";
             return;
         }
         angleSum = val + angleSum;
@@ -60,8 +60,8 @@ function triangleHypotenuse(){
         if(isNaN(val)){
             sections[2].lastElementChild.innerHTML = "Please enter both values!";
             return;
-        }else if(val == 0){
-            sections[2].lastElementChild.innerHTML = "A triangle can'nt have any side with 0 length!";
+        }else if(val <= 0){
+            sections[2].lastElementChild.innerHTML = "A triangle can'nt have any side with negative or 0 length!";
             return;
         }
         sumOfSquares = val*val + sumOfSquares;
@@ -76,8 +76,8 @@ function triangleArea(){
     if(isNaN(side1) || isNaN(side2) || isNaN(side3)){
         sections[3].lastElementChild.innerHTML = "Please enter all 3 values!";
         return;
-    }else if(side1 == 0 || side2 == 0 || side3 == 0){
-        sections[3].lastElementChild.innerHTML = "A triangle can'nt have any side with 0 length!";
+    }else if(side1 <= 0 || side2 <= 0 || side3 <= 0){
+        sections[3].lastElementChild.innerHTML = "A triangle can'nt have any side with negative or 0 length!";
         return;
     }
     
